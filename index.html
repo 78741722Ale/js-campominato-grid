@@ -31,15 +31,15 @@
                 <!-- Form di avvio campo minato -->
                 <form class="col-3 d-flex align-items-center justify-content-evenly">
                     <!-- Titolo label -->
-                    <label for="title">Difficoltà:</label>
+                    <label>Difficoltà:</label>
                     <!-- select -->
-                    <select class="bg-light w-50 mr-1">
-                        <option id="easy" value="">Easy</option>
-                        <option id="medium" value="">Medium</option>
-                        <option id="difficult" value="">Difficult</option>
+                    <select id="difficulties" name="difficulties" class="bg-light w-50 mr-1">
+                        <option value="easy" id="easy">Easy</option>
+                        <option value="medium" id="medium">Medium</option>
+                        <option value="difficult" id="difficult">Difficult</option>
                     </select>
                     <!-- Bottone Play -->
-                    <button class="btn bg_play w-25 pt-0 pb-0" type="submit">Play</button>
+                    <button class="btn bg_play w-25 pt-0 pb-0" id="play_btn" type="submit">Play</button>
                 </form>    
             </div>
         </div>
@@ -48,7 +48,7 @@
     <!-- /#site_main -->
     <div id="site_main">
         <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-            <div class="row w-50 h-75 justify-content-start align-content-start flex-grow-0 flex-wrap">
+            <div class="cells row w-50 h-75 justify-content-start align-content-start flex-grow-0 flex-wrap">
             </div>
         </div>
     </div>
