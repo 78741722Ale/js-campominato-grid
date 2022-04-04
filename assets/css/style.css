@@ -47,6 +47,21 @@
     border: 0.5px solid black;
 }
 
+/* Celle da aggiungere */
+
+.cell_sm {
+    width: calc(100% / 10);
+    height: 65px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--bg_cell_default);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 
