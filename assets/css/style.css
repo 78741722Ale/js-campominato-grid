@@ -26,17 +26,27 @@
 /* Site Header */
 #site_header {
     background-color: var(--bg_header);
-    height: 100px;
+    height: 12vh;
 }
 
 /* Site Main */
 #site_main {
     background-color: var(--bg_main);
-    height: calc(100vh - 200px);
+    height: calc(100vh - 20vh);
 }
 
 /* Site footer */
 #site_footer {
     background-color: var(--bg_footer);
-    height: 100px;
+    height: 8vh;
 }
+
+/* Colore per tasto play */
+.bg_play {
+    background-color: lightgrey;
+    border: 0.5px solid black;
+}
+
+
+
+

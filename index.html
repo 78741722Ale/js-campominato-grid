@@ -10,19 +10,36 @@
     <!-- Link a foglio di stile -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>JS - CAMPOMINATO - GRID </title>
-</head>
+</head> 
 <body>
     
     <!-- /#site_header -->
     <div id="site_header">
         <!-- Container dell'header -->
-        <div class="container-fluid">
-            <div class="row d-flex align-items-center justify-content-around">
-                <div class="col-3 d-flex align-items-center">P</div>
-                <div class="col-3 d-flex align-items-center">P</div>    
+        <div class="container-fluid d-flex align-items-center h-100">
+            <div class="row w-100 d-flex align-items-center justify-content-around">
+                <div class="col-3 d-flex align-items-center">
+                    <div class="col-2 justify-content-center align-items-center"> 
+                        <img class="w-100 ratio-1x1 h-100" src="./assets/img/unnamed.jpg" alt="Logo Boolean">
+                    </div>
+                    <div class="col-10 justify-content-center align-items-center">
+                        <h1 class="mb-0">Campo Minato</h1>
+                    </div>
+                </div>
+                <form class="col-3 d-flex align-items-center justify-content-evenly">
+                    <!-- Titolo label -->
+                    <label for="title">Difficoltà:</label>
+                    <!-- select -->
+                    <select class="bg-light w-50 mr-1">
+                        <option id="easy" value="">Easy</option>
+                        <option id="medium" value="">Medium</option>
+                        <option id="difficult" value="">Difficult</option>
+                    </select>
+                    <!-- Bottone Play -->
+                    <button class="btn bg_play w-25 pt-0 pb-0" type="submit">Play</button>
+                </form>    
             </div>
         </div>
-
     </div>
     
     <!-- /#site_main -->
