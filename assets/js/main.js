@@ -18,28 +18,30 @@ document.querySelector('form').addEventListener('submit', function (event) {
     // prendiamo dall'evento il livello ed estraiamo il valore
     const level = event.target[0].value;
     // loggiamo il livello
-    console.log(level);
-    // deci
+    // console.log(level);
 
     // usiamo switch case strutturando la griglia
     let cells_number, cols_number;
 
     switch (level) {
+        // Difficoltà facile
         case "easy":
             cells_number = 100; // 10 * 10
             cols_number = 10;
             break
+        // Difficoltà intermedia
         case "medium":
             cells_number = 81; // 9 * 9
             cols_number = 9;
             break
+        // Difficoltà difficile
         case "hard":
             cells_number = 49;
             cols_number = 7; // 7 * 7
             break
     }
 
-    console.log(cells_number, cols_number);
+    // console.log(cells_number, cols_number);
     generate_grid(cells_number, cols_number)
     handleClick()
 
@@ -57,9 +59,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
 // generiamo la griglia
 function generate_grid(cells_number, cols_number) {
     // selezioniamo elemento dom interessato (in questo caso cells diretto figlio di main)
-    // TO DO : ESTRAI IL SELETTORE E TRASFORMALO IN UN PARAMETRO
     const gameAreaElement = document.querySelector('main .row');
-
     // Pulire area di gioco
     gameAreaElement.innerHTML = "";
 
@@ -67,7 +67,6 @@ function generate_grid(cells_number, cols_number) {
     // Creazione elemento della Dom
     for (let i = 1; i <= cells_number; i++) {
         // creare l'elemento della dom (cell) da inserire nell'area di gioco
-        // TO DO : ESTRAI IL TAG NAME E TRASFORMALO IN UN PARAMETRO
         const cell = document.createElement("div")
         // Appendiamo alla cella il numero progressivo generato nel ciclo
         cell.append(i)
@@ -85,14 +84,14 @@ function handleClick() {
     // 1.  Seleziono tutte le celle (querySelectorAll). Le celle necessarie della griglia
     const cells = document.querySelectorAll('.cell')
     console.log(cells);
-    // 2. CICLO TRA GLI ELEMENTI DELLA DOM.
+    // 2. Ciclo for per gli elementi della dom
     for (let i = 0; i < cells.length; i++) {
         const cellElement = cells[i];
         // console.log(cellElement);
         // 3. Attacchiamo l'event listener all'elemento della DOM (cell).
         cellElement.addEventListener('click', function () {
             // su che elemento ho cliccato? lo vedo col dis
-            console.log(this);
+            // console.log(this);
             // 4. evidenziare la cella di azzurro. (metodo stile inline)
             // this.style.backgroundColor = "cornflowerblue"
             // 4. evidenziare la cella di azzurro. (metodo richiamo classe nel css)
