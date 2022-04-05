@@ -48,7 +48,6 @@
 }
 
 /* Celle da aggiungere */
-
 .cell {
     aspect-ratio: 1 / 1;
     background-color: var(--bg_cell_default);
@@ -58,19 +57,11 @@
     align-items: center;
 }
 
-.cell_w-10 {
-    width: calc(100% / 10);
+/* cella selezionata */
+.cell.selected {
+    color: white;
+    background-color: cornflowerblue;
 }
-
-.cell_w-9 {
-    width: calc(100% / 9);
-}
-
-.cell_w-7 {
-    width: calc(100% / 7);
-}
-
-
 
 
 
