@@ -21,6 +21,3 @@ const difficultChoiche = document.getElementById("difficult").value;
 const playButton = document.getElementById("play_btn");
 // Tutti console log delle scelte e option
 console.log(userDifficult, easyChoiche, mediumChoiche, difficultChoiche, playButton);
-
-
-
